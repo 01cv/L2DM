@@ -23,7 +23,7 @@ Once downloaded, put the ```model.ckpt``` to ```ckpt/vq-f4/model.ckpt```; ```epo
 
 ## Training L<sup>2</sup>DM
 In ```configs/latent-diffusion/``` we provide configs for training L<sup>2</sup>DM on the LOL, LOL-real, LOL-synthetic datasets. Training can be started by running
-```CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/latent-diffusion/<config_spec>.yaml -t --gpus 0,```
+```CUDA_VISIBLE_DEVICES=<GPU_ID> python main_ll.py --base configs/latent-diffusion/<config_spec>.yaml -t --gpus 0,```
 
 ## Testing our results
 Run```python d2l_ori.py --id 0 --dataset v1 --steps 20 --nrun 10 --sample dpm ```,<br>
